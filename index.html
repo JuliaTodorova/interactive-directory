@@ -21,11 +21,10 @@
 	</div>
 
 	<script type="text/template" id="person-template">
-		<span class="list-header"><%= firstname %><%= lastname %></span>
+		<span class="list-header"><%= Firstname %> <%= Lastname %>(<%= type %>) </span>
 		<div class="details">
-			home phone:<%= homephone %>
-			email: <a href="mailto:<%= email %>"><%= email %></a>
-
+			home phone:<%= Phone %><br>
+			email: <a href="mailto:<%= Email %>"><%= Email %></a>
 		</div>
 	</script>
 
@@ -35,5 +34,15 @@
 	<script type="text/javascript" src="./js/libs/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/libs/underscore-min.js"></script>
 	<script type="text/javascript" src="./js/libs/backbone-min.js"></script>
+
+	<script type="text/javascript" src="./js/Routers/router.js"></script>
+	<script type="text/javascript" src="./js/Models/person-model.js"></script>
+	<script type="text/javascript" src="./js/Views/person-views.js"></script>
+
+	<script type="text/javascript" src="./js/app.js"></script>
+
+
+
 </body>
 </html>
+

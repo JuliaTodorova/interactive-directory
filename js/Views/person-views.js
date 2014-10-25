@@ -1,6 +1,6 @@
 app = app || {};
 
-app.views.Person = Backbone.View extend({
+app.views.Person = Backbone.View.extend({
 	tagName:'li',
 	attributes: function(){
 		return {
@@ -8,7 +8,7 @@ app.views.Person = Backbone.View extend({
 		};
 	},
 
-	template: _.template($('#person-template').html());
+	template: _.template($('#person-template').html()),
 
 	render: function(){
 		this.$el.html(this.template(this.model.toJSON()))
@@ -19,7 +19,7 @@ app.views.Person = Backbone.View extend({
 app.views.People = Backbone.View.extend({
 	el: 'wrapper',
 	initialize:function(data){
-		this.collection = new app.collection.People(data);
+		this.collection = new app.collections.People(data);
 		this.render();
 	},
 	render: function(){

@@ -1,4 +1,4 @@
-app = || {};
+app = app || {};
 
 app.models.Person = Backbone.Model.extend({
 	defaults:{
@@ -10,10 +10,10 @@ app.models.Person = Backbone.Model.extend({
 		"Parent":''
 	},
 
-	initialize function(){
+	initialize: function(){
 		var self = this;
 		if(this.get('Parent') !== ''){
-			self.set('type','student');
+			self.set('type','Student');
 		}else{
 			self.set('type','Parent')
 		}
@@ -21,7 +21,7 @@ app.models.Person = Backbone.Model.extend({
 });
 
 
-app.collection.People = Backbone.Collection.extend({
+app.collections.People = Backbone.Collection.extend({
 	model: app.models.Person,
 	comparator: function(person){
 		return person.get('lastname');

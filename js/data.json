@@ -799,10 +799,8 @@ directoryData =[
 		"Email": "lacinia@liberoatauctor.net",
 		"Phone": "1-680-295-6101",
 		"Parent": 91
-	}
-]
-// Parents
-[
+	},
+
 	{
 		"ID": 218,
 		"First Name": "Quin",
