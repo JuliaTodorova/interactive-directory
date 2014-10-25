@@ -1,0 +1,39 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+	<title>Interactive Directory</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Interactive Directory</h1>
+		<div class ="tools">
+			Search:<br>
+			<input type="text" id="searchBox"><br><br>
+			Filter:
+			<div id="filters"></div>
+			<div id="count"></div>
+			<ul id="listing">
+			</ul>
+		</div>
+
+	</div>
+
+	<script type="text/template" id="person-template">
+		<span class="list-header"><%= firstname %><%= lastname %></span>
+		<div class="details">
+			home phone:<%= homephone %>
+			email: <a href="mailto:<%= email %>"><%= email %></a>
+
+		</div>
+	</script>
+
+
+	<script type="text/javascript" src="./js/data.json"></script>
+
+	<script type="text/javascript" src="./js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/libs/underscore-min.js"></script>
+	<script type="text/javascript" src="./js/libs/backbone-min.js"></script>
+</body>
+</html>

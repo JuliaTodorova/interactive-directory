@@ -1,0 +1,14 @@
+body{
+	background-color: #4A4A4A;
+	font-family: 'Lato', sans-serif;
+	color: #FFF;
+	text-align: center;
+}
+h1{
+	font-size: 3em;
+}
+input{
+	height: 25px;
+	border-radius: 5px;
+	margin:20px;
+}
