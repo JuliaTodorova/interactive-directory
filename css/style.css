@@ -28,3 +28,12 @@ ul li:hover{
 	background-color: #72A0C1;
 	color: #fff;
 }
+ul li .list-header{
+	cursor: pointer;;
+	display: block;
+}
+ul li .details{
+	display: none;
+	font-size: 0.9em;
+	margin-top: 5px;
+}

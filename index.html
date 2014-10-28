@@ -1,13 +1,13 @@
 <!DOCTYPE HTML> 
 <html>
 <head>
-	<title>Interactive Directory</title>
+	<title>Student Directory</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div id="wrapper">
-		<h1>Interactive Directory</h1>
+		<h1>Student Directory</h1>
 		<div class ="tools">
 			Search:<br>
 			<input type="text" id="searchBox"><br><br>
@@ -21,9 +21,9 @@
 	</div>
 
 	<script type="text/template" id="person-template">
-		<span class="list-header"><%= firstname %> <%= lastname %>(<%= type %>)</span>
+		<span class= "list-header"><%= firstname %> <%= lastname %> - <%= type %></span>
 		<div class="details">
-			home phone:<%= phone %><br>
+			home phone: <%= phone %><br>
 			email: <a href="mailto:<%= email %>"><%= email %></a>
 		</div>
 	</script>
