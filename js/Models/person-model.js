@@ -2,12 +2,12 @@ app = app || {};
 
 app.models.Person = Backbone.Model.extend({
 	defaults:{
-		'ID': '',
-		'Firstname':'',
-		'Lastname':'',
-		'Email':'',
-		'Phone':'',
-		"Parent":''
+		'id': '',
+		'firstname':'',
+		'lastname':'',
+		'email':'',
+		'phone':'',
+		"parent":''
 	},
 
 	initialize: function(){
