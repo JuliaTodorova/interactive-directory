@@ -20,7 +20,6 @@ app.models.Person = Backbone.Model.extend({
 	}
 });
 
-
 app.collections.People = Backbone.Collection.extend({
 	model: app.models.Person,
 	comparator: function(person){

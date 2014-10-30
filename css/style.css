@@ -9,31 +9,38 @@ body{
 h1{
 	font-size: 3em;
 }
-input{
-	height: 25px;
+#searchBox{
+	padding: 7px;
+	border: none;
 	border-radius: 5px;
-	margin:20px;
+	font-size: 1.2em;
+	margin-top: 20px;
 }
-li{
+.list-header{
 	color:#4A4A4A;
 	background-color: #fff;
 	padding:25px; 
 	text-align: left;
 	border-bottom: thin dotted #4A4A4A;
 }
-ul{
-	padding: 0;
-}
-ul li:hover{
+.list-header:active,
+.list-header:hover{
 	background-color: #72A0C1;
 	color: #fff;
+}
+ul{
+	padding: 0;
 }
 ul li .list-header{
 	cursor: pointer;;
 	display: block;
+	font-size: 1.2em;
 }
 ul li .details{
 	display: none;
-	font-size: 0.9em;
-	margin-top: 5px;
+	font-size: 1.0em;
+	background-color: #E6E6E6;
+	text-align: left;
+	padding: 10px;
+	color: #000;
 }
