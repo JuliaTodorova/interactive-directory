@@ -2,17 +2,17 @@ app = app || {};
 
 app.models.Person = Backbone.Model.extend({
 	defaults:{
-		'id': '',
+		'ID': '',
 		'firstname':'',
 		'lastname':'',
 		'email':'',
 		'phone':'',
-		"parent":''
+		"parent": ''
 	},
 
 	initialize: function(){
 		var self = this;
-		if(this.get('Parent') !== ''){
+		if(this.get('parent') !== ''){
 			self.set('type','Student');
 		}else{
 			self.set('type','Parent')

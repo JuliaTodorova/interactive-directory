@@ -44,3 +44,15 @@ ul li .details{
 	padding: 10px;
 	color: #000;
 }
+a.filter {
+	display:inline-block;
+	padding:5px 10px;
+	margin:5px;
+	background:#0472C0;
+	color:#fff;
+	text-decoration:none;
+	border-radius:3px;
+}
+a.filter:hover {
+	background:#0B9DE0;
+}
